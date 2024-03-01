@@ -9,9 +9,85 @@
   <li id="sfo" class="west">San Francisco</li>
 </ul>
 
+<div id="bye">Click me</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
   // Write your JS here.
   // Open the JS console and refresh the page to see the output.
+  /* 
+  console.log("howdy");
+  console.log("world");
+  console.log(`Your lucky number is ${7 * 6}`)
 
+  let name = "Alice";
+  console.log(`howdy ${name}`);
+  name = "Bob";
+  console.log(`hi ${name}`);
+
+  const pi = 3.14;
+
+  let aReallyLongVariableName = 42;
   
+  function greet(name) {
+    console.log(`howdy, ${name}!`);
+  }
+
+  greet("Alice")
+
+  let x = 5;
+  x ++; 
+  console.log(x)
+
+  for (let i = 2; i < 6; i++) {
+    console.log(i * i);
+  }
+
+  let fruits = ["apples", "oranges", "bananas"];
+  console.log(fruits[1]);
+  console.log(fruits.length);
+
+  fruits.forEach(function(fruit) {
+    console.log(`I love ${fruit}!`)
+  })
+
+  let win_probability = Math.random();
+  let dice_roll = Math.floor(Math.random() * 6);
+  console.log(win_probability, dice_roll)
+
+  const moves = ["rock", "paper", "scissors"];
+  let random_index = Math.floor(Math.random() * 3);
+  let computer_move = moves[random_index];
+  console.log(`The computer played ${computer_move}.`);
+  if (computer_move === "rock") {
+    console.log("You tied.");
+  } else if (computer_move === "paper") {
+    console.log("You lost.");
+  } else {
+    console.log("You won.")
+  }
+  */
+
+  for (let i = 1; i <= 100; i++ ) {
+    if (i % 3 === 0) {
+      if (i % 5 === 0) {
+        console.log("fizzbuzz")
+      } else {
+        console.log("fizz")
+      }
+    } else if (i % 5 === 0) {
+      console.log("buzz")
+    } else {
+      console.log(i)
+    }
+  }
+/*
+  eastItems = document.getElementsByClassName("east")
+  for (let i = 0; i < eastItems.length; i++) { eastItems[i].style.border = "thin blue solid"; }
+*/
+  // can alternatively do Array.from(eastItems).forEach((item) => { item.style.border = "thin blue solid"})
+  
+  let chi = $("#ord");
+  $(".east").css("border", "thin blue solid");
+
 </script>
